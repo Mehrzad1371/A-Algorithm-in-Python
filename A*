@@ -76,6 +76,6 @@ if name == "main":
     if path:
         print("Path found:")
         for step in path:
-            print(step)
+            print(Step)
     else:
         print("No path found.")
