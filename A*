@@ -74,7 +74,7 @@ if name == "main":
 
     path = astar(grid, start, end)
     if path:
-        print("Path found:")
+        print("Path found :")
         for step in path:
             print(Step)
     else:
