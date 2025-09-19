@@ -52,7 +52,7 @@ def astar(grid, start, end):
             neighbor.h = heuristic(nextpos, endnode.position)
             neighbor.f = neighbor.g + neighbor.h
 
-            if any(opennode.position == neighbor.position and opennode.f <= neighbor.f for opennode in openlist):
+            if any(opennode.position == neighbor.position and opennode.f <= neighbor.f for opennode in openlist ):
                 continue  # Better path already in open list
 
             heapq.heappush(open_list, neighbor)
